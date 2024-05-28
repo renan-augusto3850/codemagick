@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+:root{
+    --secondary-color: #01385e;
+    --primary-color: #00111c;
+    --trirdy-color: #c1121f;
+    --forth-color: #330369;
+    --text-color: #fdf0d5;
+    --text-font: Helvetica;
+}
+body{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-app-region: no-drag;
+}
+#text-edit{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    font-family: "Fira Code";
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--text-font);
+    width: 100%;
+    height: 600px;
+    white-space: pre-wrap;
+    padding: 10px;
+}
+.top-div{
+    -webkit-app-region: drag;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: var(--trirdy-color);
+    width: 100%;
+    height: 35px;
+}
+.top-div > button{
+    color: var(--forth-color);
+    background-color: transparent;
+    padding: 4px;
+    margin: 0 10px 10px 0;
+    border: transparent;
+    height: 30px;
+}
+.actions{
+    position: absolute;
+    right: 8px;
+    -webkit-app-region: no-drag;
+}
+.actions > button{
+    color: var(--primary-color);
+    background-color: transparent;
+    margin-left: 3px;
+    margin-top: 2px;
+    font-size: 14px;
+    border: transparent;
+    height: 30px;
+}
+#minimize > .fa-window-minimize{
+    position: absolute;
+    top: 6px;
+    right: 70px;
+}
+.fa-save{
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 16px;
+}
+.fa-star, .fa-folder-open{
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+.back-div{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+}
+.elements{
+    color: blue;
+}
+.atribute{
+    color: var(--trirdy-color);
+}
+.bracesOrKeys{
+    color: yellow;
+}

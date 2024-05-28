@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="pt-br">
+    <title>CodeMagick</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="predictions.css">
+    <link rel="image/x-icon" href="SeaHorseIcon.ico">
+    <script src="https://kit.fontawesome.com/e77c01ed94.js" crossorigin="anonymous"></script>
+</head>
+<html>
+    <body>
+        <div class="top-div">
+            <img src="codemagick.png" width="30" height="30" style="margin-left: 10px;">
+            <button id="save-button"><i class="fa-solid fa-save"></i></button>
+            <button id="ai-button"><i class="fa-solid fa-star"></i></button>
+            <button id="open-button"><i class="fa-solid fa-folder-open"></i></button>
+            <div class="actions">
+                <button id="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+                <button id="maximize"><i class="fa-solid fa-window-maximize"></i></button>
+                <button id="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <!---<div class="ai-div"></div>--->
+        <div id="text-edit" contenteditable="true"></div>
+        <div class="back-div">
+            <p>Test   </p>
+            <p>1.0</p>
+        </div>
+    </body>
+</html>
+<script>
+    document.getElementById('save-button').addEventListener('click', () => {
+        archive.sendContentToMain(document.getElementById('text-edit').innerHTML);
+    });
+</script>

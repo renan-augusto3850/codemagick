@@ -1,0 +1,27 @@
+{
+  "name": "codemagick",
+  "version": "1.0.0",
+  "description": "General IDE",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.smart.codemagick",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "./codemagick.png"
+
+  }
+  },
+  "author": "Renan Augusto",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3"
+  }
+}
